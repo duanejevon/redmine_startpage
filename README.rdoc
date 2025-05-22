@@ -1,18 +1,18 @@
 = startpage
 
-This is a plugin for Redmine.  It allows the user to select almost any redmine sub page as start page for a Redmine website
+This is a plugin for Redmine.  It allows the user to select almost any Redmine sub page as the start page for a Redmine website.
 
 Some examples are:
 If the starting page must be the initial wiki page (the topic named 'wiki') for the 'redminewikistartpage' project, then
 
-Redmine 1.x
+Redmine 1.x and 2.x
     Controller: projects
     Action: redminewikistartpage
     Id: wiki
     Extra argument name must be an empty string.
     Extra argument value must be an empty string.
 
-Redmine 2.x
+Redmine 6.x
     Controller: wiki (name of the controller)
     Action: show
     Id: wiki (name of the topic to show)
@@ -28,7 +28,7 @@ Please note that the plugin directory must be 'redmine_startpage'.
 Github adds suffixes to the downloaded file so if you extract it directly to the plugin directory you will need to rename it to 'redmine_startpage'.
 
 For instance:
-    > ... (download and copy it to redmine's plugin directory)      
+    > ... (download and copy it to Redmine's plugin directory)      
     > cd plugins     
     > tar xvfz redmine_startpage-0.0.3.tar.gz     
     > mv redmine_startpage-0.0.3 redmine_startpage     
