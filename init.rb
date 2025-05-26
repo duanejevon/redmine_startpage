@@ -1,6 +1,6 @@
 require 'redmine'
 
-require_dependency 'welcome_controller_patch'
+require File.expand_path('lib/welcome_controller_patch', __dir__)
 
 Redmine::Plugin.register :redmine_startpage do
   name 'Redmine Startpage plugin'
